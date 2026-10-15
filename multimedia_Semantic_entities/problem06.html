@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant & Food Delivery Portal</title>
+</head>
+<body>
+
+<header>
+    <h1>Spice Garden Restaurant</h1>
+    <p>Fresh food, delicious flavours &amp; convenient delivery.</p>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#menu">Menu</a> |
+        <a href="#process">Ordering Steps</a> |
+        <a href="#order">Place Order</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="about">
+    <h2>About Our Restaurant</h2>
+
+    <article>
+        <h3>Welcome to Spice Garden</h3>
+        <p>
+            Spice Garden offers Indian, Chinese and continental dishes.
+            We focus on quality ingredients, hygiene and customer satisfaction.
+        </p>
+
+        <figure>
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4"
+                 alt="Restaurant interior" width="500">
+            <figcaption>Comfortable dining experience for every customer.</figcaption>
+        </figure>
+    </article>
+</section>
+
+<section id="multimedia">
+    <h2>Restaurant Multimedia</h2>
+
+    <h3>Kitchen Tour Video</h3>
+    <video width="500" controls>
+        <source src="kitchen-tour.mp4" type="video/mp4">
+        Your browser does not support video playback.
+    </video>
+
+    <h3>Chef Introduction Audio</h3>
+    <audio controls>
+        <source src="chef-introduction.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+
+    <h3>Restaurant Location</h3>
+    <iframe src="https://www.openstreetmap.org/export/embed.html"
+            width="600" height="350"
+            title="Restaurant location map"></iframe>
+</section>
+
+<section id="features">
+    <h2>Restaurant Features</h2>
+
+    <ul>
+        <li>Freshly prepared food</li>
+        <li>Vegetarian and non-vegetarian options</li>
+        <li>Online ordering</li>
+        <li>Home delivery</li>
+        <li>Family dining area</li>
+        <li>Birthday and event bookings</li>
+    </ul>
+</section>
+
+<section id="process">
+    <h2>Ordering Steps</h2>
+
+    <ol>
+        <li>Choose your preferred food items.</li>
+        <li>Select the quantity.</li>
+        <li>Enter your delivery address.</li>
+        <li>Confirm your order.</li>
+        <li>Receive the order at your location.</li>
+    </ol>
+
+    <h3>Restaurant Terminology</h3>
+
+    <dl>
+        <dt>Dine-in</dt>
+        <dd>Eating food inside the restaurant.</dd>
+
+        <dt>Takeaway</dt>
+        <dd>Food collected from the restaurant for eating elsewhere.</dd>
+
+        <dt>Delivery</dt>
+        <dd>Food transported to the customer's selected address.</dd>
+
+        <dt>Reservation</dt>
+        <dd>Booking a table before visiting the restaurant.</dd>
+    </dl>
+</section>
+
+<section id="menu">
+    <h2>Food Menu</h2>
+
+    <table border="1">
+        <caption>Restaurant Menu</caption>
+
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Food Item</th>
+                <th>Category</th>
+                <th>Price</th>
+                <th>Availability</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>1</td><td>Paneer Tikka</td><td>Starter</td><td>&#8377;220</td><td>Available</td></tr>
+            <tr><td>2</td><td>Veg Spring Rolls</td><td>Starter</td><td>&#8377;180</td><td>Available</td></tr>
+            <tr><td>3</td><td>Butter Paneer</td><td>Main Course</td><td>&#8377;260</td><td>Available</td></tr>
+            <tr><td>4</td><td>Dal Makhani</td><td>Main Course</td><td>&#8377;190</td><td>Available</td></tr>
+            <tr><td>5</td><td>Veg Biryani</td><td>Rice</td><td>&#8377;220</td><td>Available</td></tr>
+            <tr><td>6</td><td>Chicken Biryani</td><td>Rice</td><td>&#8377;290</td><td>Available</td></tr>
+            <tr><td>7</td><td>Garlic Naan</td><td>Bread</td><td>&#8377;70</td><td>Available</td></tr>
+            <tr><td>8</td><td>Fried Rice</td><td>Chinese</td><td>&#8377;180</td><td>Available</td></tr>
+            <tr><td>9</td><td>Gulab Jamun</td><td>Dessert</td><td>&#8377;100</td><td>Available</td></tr>
+            <tr><td>10</td><td>Fresh Lime Soda</td><td>Beverage</td><td>&#8377;80</td><td>Available</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<aside>
+    <h2>Customer Notice</h2>
+    <p>
+        Please inform our staff about food allergies before placing an order.
+        Prices may change without prior notice.
+    </p>
+</aside>
+
+<section id="order">
+    <h2>Order and Enquiry Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Mobile Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="food">Select Food Item:</label><br>
+        <select id="food" name="food">
+            <option value="paneer">Paneer Tikka</option>
+            <option value="biryani">Veg Biryani</option>
+            <option value="butter-paneer">Butter Paneer</option>
+            <option value="fried-rice">Fried Rice</option>
+            <option value="dessert">Gulab Jamun</option>
+        </select><br><br>
+
+        <label for="quantity">Quantity:</label><br>
+        <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+        <label for="service">Service Type:</label><br>
+        <select id="service" name="service">
+            <option value="dine-in">Dine-in</option>
+            <option value="takeaway">Takeaway</option>
+            <option value="delivery">Delivery</option>
+            <option value="reservation">Reservation</option>
+        </select><br><br>
+
+        <label for="address">Delivery Address:</label><br>
+        <textarea id="address" name="address" rows="4" cols="40"></textarea><br><br>
+
+        <label for="message">Additional Instructions:</label><br>
+        <textarea id="message" name="message" rows="4" cols="40"></textarea><br><br>
+
+        <input type="checkbox" id="confirm" name="confirm" required>
+        <label for="confirm">I confirm that the information is correct.</label><br><br>
+
+        <input type="submit" value="Submit Order">
+        <input type="reset" value="Reset">
+
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Spice Garden Restaurant &reg;.</p>
+    <p>Fresh food &amp; happy customers.</p>
+    <p>Contact: orders@example.com</p>
+</footer>
+
+</body>
+</html>

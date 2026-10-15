@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sports Academy & Tournament Portal</title>
+</head>
+<body>
+
+<header>
+    <h1>Champion Sports Academy</h1>
+    <p>Train hard, play fairly &amp; achieve your goals.</p>
+
+    <nav>
+        <a href="#academy">Academy</a> |
+        <a href="#facilities">Facilities</a> |
+        <a href="#tournament">Tournament</a> |
+        <a href="#registration">Registration</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="academy">
+    <h2>About Champion Sports Academy</h2>
+
+    <article>
+        <h3>Our Mission</h3>
+        <p>
+            Champion Sports Academy provides sports training, coaching and
+            tournament opportunities for athletes of different skill levels.
+        </p>
+
+        <figure>
+            <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211"
+                 alt="Athletes running on a track" width="500">
+            <figcaption>Training and teamwork build sporting skills.</figcaption>
+        </figure>
+    </article>
+</section>
+
+<section id="multimedia">
+    <h2>Sports Multimedia</h2>
+
+    <h3>Training and Highlights Video</h3>
+    <video width="500" controls>
+        <source src="sports-training.mp4" type="video/mp4">
+        Your browser does not support video playback.
+    </video>
+
+    <h3>Coach Introduction Audio</h3>
+    <audio controls>
+        <source src="coach-introduction.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+
+    <h3>Venue Map</h3>
+    <iframe src="https://www.openstreetmap.org/export/embed.html"
+            width="600" height="350"
+            title="Sports venue map"></iframe>
+</section>
+
+<section id="facilities">
+    <h2>Academy Facilities</h2>
+
+    <ul>
+        <li>Professional coaching</li>
+        <li>Training ground</li>
+        <li>Fitness centre</li>
+        <li>Changing rooms</li>
+        <li>First-aid facility</li>
+        <li>Indoor practice area</li>
+    </ul>
+
+    <h3>Registration and Training Steps</h3>
+
+    <ol>
+        <li>Complete the registration form.</li>
+        <li>Attend the introductory assessment.</li>
+        <li>Select a suitable training group.</li>
+        <li>Attend regular practice sessions.</li>
+        <li>Participate in tournaments.</li>
+    </ol>
+
+    <h3>Sports Terminology</h3>
+
+    <dl>
+        <dt>Match</dt>
+        <dd>A competitive contest between players or teams.</dd>
+
+        <dt>Fixture</dt>
+        <dd>An officially scheduled match or event.</dd>
+
+        <dt>League</dt>
+        <dd>A competition in which teams play multiple matches.</dd>
+
+        <dt>Knockout</dt>
+        <dd>A competition where a participant is eliminated after a loss.</dd>
+    </dl>
+</section>
+
+<section id="tournament">
+    <h2>Tournament Schedule</h2>
+
+    <table border="1">
+        <caption>Upcoming Tournament Fixtures</caption>
+
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Date</th>
+                <th>Sport</th>
+                <th>Teams/Participants</th>
+                <th>Venue</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>1</td><td>01 October</td><td>Football</td><td>Team A vs Team B</td><td>Main Ground</td></tr>
+            <tr><td>2</td><td>02 October</td><td>Cricket</td><td>Team C vs Team D</td><td>Cricket Field</td></tr>
+            <tr><td>3</td><td>03 October</td><td>Basketball</td><td>Team E vs Team F</td><td>Indoor Court</td></tr>
+            <tr><td>4</td><td>04 October</td><td>Badminton</td><td>Player A vs Player B</td><td>Badminton Hall</td></tr>
+            <tr><td>5</td><td>05 October</td><td>Volleyball</td><td>Team G vs Team H</td><td>Sports Ground</td></tr>
+            <tr><td>6</td><td>06 October</td><td>Athletics</td><td>Track Event</td><td>Running Track</td></tr>
+            <tr><td>7</td><td>07 October</td><td>Table Tennis</td><td>Player C vs Player D</td><td>Indoor Hall</td></tr>
+            <tr><td>8</td><td>08 October</td><td>Chess</td><td>Player E vs Player F</td><td>Activity Room</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<aside>
+    <h2>Sportsmanship</h2>
+    <p>
+        Respect your opponents, follow the rules and maintain discipline
+        throughout training and competition.
+    </p>
+</aside>
+
+<section id="registration">
+    <h2>Athlete Registration Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="name">Athlete Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Mobile Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" min="5" max="100" required><br><br>
+
+        <label for="sport">Preferred Sport:</label><br>
+        <select id="sport" name="sport">
+            <option value="football">Football</option>
+            <option value="cricket">Cricket</option>
+            <option value="basketball">Basketball</option>
+            <option value="badminton">Badminton</option>
+            <option value="athletics">Athletics</option>
+            <option value="chess">Chess</option>
+        </select><br><br>
+
+        <label for="level">Skill Level:</label><br>
+        <select id="level" name="level">
+            <option value="beginner">Beginner</option>
+            <option value="intermediate">Intermediate</option>
+            <option value="advanced">Advanced</option>
+        </select><br><br>
+
+        <label for="message">Previous Experience:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+        <input type="checkbox" id="confirm" name="confirm" required>
+        <label for="confirm">I confirm that the details are accurate.</label><br><br>
+
+        <input type="submit" value="Register Athlete">
+        <input type="reset" value="Reset">
+
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 Champion Sports Academy &trade;.</p>
+    <p>Train fairly &amp; play responsibly.</p>
+</footer>
+
+</body>
+</html>

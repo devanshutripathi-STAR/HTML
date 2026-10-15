@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Course Enrollment</title>
+</head>
+<body>
+
+    <h1>Online Course Enrollment</h1>
+
+    <p>
+        Register for a technical course and develop your skills
+        through structured learning and practical activities.
+    </p>
+
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
+         alt="Student learning through an online course"
+         width="400">
+
+    <p>
+        <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+           target="_blank"
+           title="Explore web development learning resources"
+           rel="noopener noreferrer">
+            Course Information
+        </a>
+    </p>
+
+    <hr>
+
+    <form action="#" method="post">
+
+        <h2>Account Information</h2>
+
+        <label for="student_name">Student Name:</label>
+        <input type="text" id="student_name" name="student_name"
+               minlength="3" maxlength="60" required>
+        <br><br>
+
+        <label for="student_email">Email:</label>
+        <input type="email" id="student_email" name="email"
+               autocomplete="email" required>
+        <br><br>
+
+        <label for="student_password">Password:</label>
+        <input type="password" id="student_password"
+               name="password" minlength="8" maxlength="20" required>
+        <br><br>
+
+        <label for="student_phone">Mobile Number:</label>
+        <input type="tel" id="student_phone" name="mobile"
+               pattern="[6-9][0-9]{9}"
+               maxlength="10" required>
+        <br><br>
+
+        <label for="student_dob">Date of Birth:</label>
+        <input type="date" id="student_dob" name="date_of_birth"
+               required>
+
+        <h2>Course Details</h2>
+
+        <label for="course">Select Course:</label>
+        <select id="course" name="course" required>
+            <option value="">Choose Course</option>
+            <option value="python">Python Programming</option>
+            <option value="java">Java Programming</option>
+            <option value="web">Web Development</option>
+            <option value="dsa">Data Structures and Algorithms</option>
+            <option value="database">Database Management</option>
+            <option value="aiml">Artificial Intelligence and ML</option>
+        </select>
+        <br><br>
+
+        <label for="batch">Select Batch:</label>
+        <select id="batch" name="batch" required>
+            <option value="">Choose Batch</option>
+            <option value="morning">Morning Batch</option>
+            <option value="afternoon">Afternoon Batch</option>
+            <option value="evening">Evening Batch</option>
+            <option value="weekend">Weekend Batch</option>
+        </select>
+
+        <h2>Learning Preference</h2>
+
+        <p>Learning Mode:</p>
+
+        <input type="radio" id="online" name="learning_mode"
+               value="online" required>
+        <label for="online">Online</label>
+
+        <input type="radio" id="offline" name="learning_mode"
+               value="offline">
+        <label for="offline">Offline</label>
+
+        <input type="radio" id="hybrid" name="learning_mode"
+               value="hybrid">
+        <label for="hybrid">Hybrid</label>
+
+        <h2>Areas of Interest</h2>
+
+        <input type="checkbox" id="interest_java"
+               name="interests" value="java">
+        <label for="interest_java">Java</label>
+
+        <input type="checkbox" id="interest_python"
+               name="interests" value="python">
+        <label for="interest_python">Python</label>
+
+        <input type="checkbox" id="interest_web"
+               name="interests" value="web_development">
+        <label for="interest_web">Web Development</label>
+
+        <input type="checkbox" id="interest_dsa"
+               name="interests" value="data_structures">
+        <label for="interest_dsa">Data Structures</label>
+
+        <input type="checkbox" id="interest_database"
+               name="interests" value="database">
+        <label for="interest_database">Database</label>
+
+        <h2>Educational Background</h2>
+
+        <label for="education">Education Level:</label>
+        <select id="education" name="education_level" required>
+            <option value="">Select Education</option>
+            <option value="school">School</option>
+            <option value="diploma">Diploma</option>
+            <option value="undergraduate">Undergraduate</option>
+            <option value="postgraduate">Postgraduate</option>
+        </select>
+        <br><br>
+
+        <label for="institution">College / Institution:</label>
+        <input type="text" id="institution" name="institution"
+               minlength="3" maxlength="100" required>
+        <br><br>
+
+        <label for="semester">Current Semester / Year:</label>
+        <input type="text" id="semester" name="semester"
+               placeholder="Example: 1st Semester" required>
+        <br><br>
+
+        <label for="experience">Programming Experience (Years):</label>
+        <input type="number" id="experience" name="programming_experience"
+               min="0" max="20" step="0.5" value="0">
+        <br><br>
+
+        <label for="github">GitHub / Portfolio URL:</label>
+        <input type="url" id="github" name="portfolio_url"
+               placeholder="https://example.com">
+        <br><br>
+
+        <label for="goals">Learning Goals:</label><br>
+        <textarea id="goals" name="learning_goals"
+                  rows="5" cols="40"
+                  minlength="10" maxlength="500"
+                  placeholder="Describe what you want to learn"
+                  required></textarea>
+
+        <br><br>
+
+        <input type="checkbox" id="confirmation"
+               name="confirmation" value="confirmed" required>
+        <label for="confirmation">
+            I confirm that the information provided is correct.
+        </label>
+
+        <br><br>
+
+        <input type="submit" value="Enroll Now">
+        <input type="reset" value="Reset Form">
+
+    </form>
+
+</body>
+</html>

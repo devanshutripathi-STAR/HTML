@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News & Media Digital Magazine</title>
+</head>
+<body>
+
+<header>
+    <h1>The Daily Horizon &mdash; Digital Magazine</h1>
+    <p>News, analysis and stories from around the world.</p>
+
+    <nav>
+        <a href="#categories">Categories</a> |
+        <a href="#stories">Top Stories</a> |
+        <a href="#news">News Table</a> |
+        <a href="#newsletter">Newsletter</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="categories">
+    <h2>News Categories</h2>
+
+    <ul>
+        <li>National News</li>
+        <li>International News</li>
+        <li>Technology</li>
+        <li>Business</li>
+        <li>Sports</li>
+        <li>Entertainment</li>
+    </ul>
+
+    <h3>Top Story Ranking</h3>
+    <ol>
+        <li>Technology and innovation</li>
+        <li>National development</li>
+        <li>Global events</li>
+        <li>Business updates</li>
+        <li>Sports news</li>
+    </ol>
+
+    <h3>Editorial Terms</h3>
+    <dl>
+        <dt>Editorial</dt>
+        <dd>An article expressing the publication's viewpoint.</dd>
+
+        <dt>Breaking News</dt>
+        <dd>Important news reported as events develop.</dd>
+
+        <dt>Opinion</dt>
+        <dd>An article presenting the writer's perspective.</dd>
+
+        <dt>Sponsored Content</dt>
+        <dd>Content created with financial support from a sponsor.</dd>
+    </dl>
+</section>
+
+<section id="multimedia">
+    <h2>Media Resources</h2>
+
+    <h3>News Video</h3>
+    <video width="500" controls>
+        <source src="news-video.mp4" type="video/mp4">
+        Your browser does not support video.
+    </video>
+
+    <h3>Daily Bulletin</h3>
+    <audio controls>
+        <source src="daily-bulletin.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+
+    <h3>External Report</h3>
+    <iframe src="https://www.bbc.com/news"
+            width="600" height="350"
+            title="External news resource"></iframe>
+</section>
+
+<section id="stories">
+    <h2>Featured Story</h2>
+
+    <article>
+        <h3>Technology and the Future</h3>
+        <p>
+            Emerging technologies are changing education, communication,
+            business and everyday life. Readers should verify information
+            through reliable sources before sharing news.
+        </p>
+
+        <figure>
+            <img src="https://images.unsplash.com/photo-1504711434969-e33886168f5c"
+                 alt="Newspaper and journalism" width="500">
+            <figcaption>Journalism connects people with information.</figcaption>
+        </figure>
+    </article>
+</section>
+
+<section id="news">
+    <h2>News Listing</h2>
+
+    <table border="1">
+        <caption>Sample News Entries</caption>
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Headline</th>
+                <th>Category</th>
+                <th>Author</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>1</td><td>New Technology Trends</td><td>Technology</td><td>Editorial Team</td><td>Report</td></tr>
+            <tr><td>2</td><td>Education Updates</td><td>National</td><td>News Desk</td><td>News</td></tr>
+            <tr><td>3</td><td>Market Developments</td><td>Business</td><td>Finance Desk</td><td>Analysis</td></tr>
+            <tr><td>4</td><td>Global Climate Discussion</td><td>International</td><td>Special Correspondent</td><td>Report</td></tr>
+            <tr><td>5</td><td>Sports Tournament Results</td><td>Sports</td><td>Sports Desk</td><td>News</td></tr>
+            <tr><td>6</td><td>New Film Releases</td><td>Entertainment</td><td>Culture Desk</td><td>Review</td></tr>
+            <tr><td>7</td><td>Startup Ecosystem</td><td>Business</td><td>Business Desk</td><td>Feature</td></tr>
+            <tr><td>8</td><td>Digital Safety Awareness</td><td>Technology</td><td>Tech Desk</td><td>Guide</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<aside>
+    <h2>Reader Reminder</h2>
+    <p>Check the source, date and author before trusting or sharing information.</p>
+</aside>
+
+<section id="newsletter">
+    <h2>Newsletter and Contact Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="category">Preferred News Category:</label><br>
+        <select id="category" name="category">
+            <option value="national">National</option>
+            <option value="international">International</option>
+            <option value="technology">Technology</option>
+            <option value="business">Business</option>
+            <option value="sports">Sports</option>
+        </select><br><br>
+
+        <label for="message">Your Message:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+        <input type="checkbox" id="subscribe" name="subscribe">
+        <label for="subscribe">Subscribe to the newsletter.</label><br><br>
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 The Daily Horizon &reg;.</p>
+    <p>News &amp; information for responsible readers.</p>
+</footer>
+
+</body>
+</html>

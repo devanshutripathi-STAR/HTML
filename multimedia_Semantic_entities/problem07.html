@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Property Showcase</title>
+</head>
+<body>
+
+<header>
+    <h1>GreenView Properties</h1>
+    <p>Find your dream home &mdash; Comfortable living for every family.</p>
+
+    <nav>
+        <a href="#about">About</a> |
+        <a href="#amenities">Amenities</a> |
+        <a href="#properties">Properties</a> |
+        <a href="#enquiry">Property Enquiry</a>
+    </nav>
+</header>
+
+<main>
+
+<section id="about">
+    <h2>About GreenView Properties</h2>
+
+    <article>
+        <h3>Quality Homes and Modern Living</h3>
+        <p>
+            GreenView Properties develops residential homes with a focus on
+            safety, convenience, connectivity and sustainable living.
+        </p>
+
+        <figure>
+            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c"
+                 alt="Modern residential house" width="500">
+            <figcaption>Modern residential property.</figcaption>
+        </figure>
+    </article>
+</section>
+
+<section id="multimedia">
+    <h2>Property Multimedia</h2>
+
+    <h3>Property Tour Video</h3>
+    <video width="500" controls>
+        <source src="property-tour.mp4" type="video/mp4">
+        Your browser does not support video playback.
+    </video>
+
+    <h3>Sales Agent Audio</h3>
+    <audio controls>
+        <source src="sales-agent.mp3" type="audio/mpeg">
+        Your browser does not support audio playback.
+    </audio>
+
+    <h3>Property Location</h3>
+    <iframe src="https://www.openstreetmap.org/export/embed.html"
+            width="600" height="350"
+            title="Property location map"></iframe>
+</section>
+
+<section id="amenities">
+    <h2>Property Amenities</h2>
+
+    <ul>
+        <li>24-hour security</li>
+        <li>Covered parking</li>
+        <li>Children's play area</li>
+        <li>Community garden</li>
+        <li>Fitness centre</li>
+        <li>Power backup</li>
+        <li>Water supply</li>
+    </ul>
+
+    <h3>Home Buying Steps</h3>
+
+    <ol>
+        <li>Choose a property.</li>
+        <li>Schedule a site visit.</li>
+        <li>Check the property documents.</li>
+        <li>Discuss the payment plan.</li>
+        <li>Complete the booking process.</li>
+        <li>Sign the required agreement.</li>
+    </ol>
+
+    <h3>Real Estate Terms</h3>
+
+    <dl>
+        <dt>Carpet Area</dt>
+        <dd>The usable floor area inside a property.</dd>
+
+        <dt>Maintenance</dt>
+        <dd>Charges collected for maintaining shared facilities.</dd>
+
+        <dt>Possession</dt>
+        <dd>The process of handing over the property to the buyer.</dd>
+
+        <dt>Booking Amount</dt>
+        <dd>An initial amount paid to reserve a property.</dd>
+    </dl>
+</section>
+
+<section id="properties">
+    <h2>Property Comparison</h2>
+
+    <table border="1">
+        <caption>Available Property Configurations</caption>
+
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Configuration</th>
+                <th>Area</th>
+                <th>Bedrooms</th>
+                <th>Estimated Price</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td>1</td><td>Studio</td><td>450 sq. ft.</td><td>1</td><td>&#8377;25 Lakh</td></tr>
+            <tr><td>2</td><td>1 BHK</td><td>650 sq. ft.</td><td>1</td><td>&#8377;35 Lakh</td></tr>
+            <tr><td>3</td><td>2 BHK Standard</td><td>950 sq. ft.</td><td>2</td><td>&#8377;55 Lakh</td></tr>
+            <tr><td>4</td><td>2 BHK Premium</td><td>1150 sq. ft.</td><td>2</td><td>&#8377;70 Lakh</td></tr>
+            <tr><td>5</td><td>3 BHK Standard</td><td>1400 sq. ft.</td><td>3</td><td>&#8377;90 Lakh</td></tr>
+            <tr><td>6</td><td>3 BHK Premium</td><td>1750 sq. ft.</td><td>3</td><td>&#8377;1.2 Crore</td></tr>
+        </tbody>
+    </table>
+</section>
+
+<aside>
+    <h2>Important Information</h2>
+    <p>
+        Verify property documents, applicable charges and legal details
+        before making any payment or signing an agreement.
+    </p>
+</aside>
+
+<section id="enquiry">
+    <h2>Property Enquiry Form</h2>
+
+    <form action="#" method="post">
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Mobile Number:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+
+        <label for="configuration">Preferred Configuration:</label><br>
+        <select id="configuration" name="configuration">
+            <option value="studio">Studio</option>
+            <option value="1bhk">1 BHK</option>
+            <option value="2bhk">2 BHK</option>
+            <option value="3bhk">3 BHK</option>
+        </select><br><br>
+
+        <label for="budget">Budget:</label><br>
+        <input type="number" id="budget" name="budget" min="0"><br><br>
+
+        <label for="visit">Preferred Visit Date:</label><br>
+        <input type="date" id="visit" name="visit"><br><br>
+
+        <label for="message">Your Requirements:</label><br>
+        <textarea id="message" name="message" rows="5" cols="40"></textarea><br><br>
+
+        <input type="checkbox" id="contact" name="contact" required>
+        <label for="contact">I agree to be contacted about this property.</label><br><br>
+
+        <input type="submit" value="Submit Enquiry">
+        <input type="reset" value="Reset">
+
+    </form>
+</section>
+
+</main>
+
+<footer>
+    <p>&copy; 2026 GreenView Properties &trade;.</p>
+    <p>Building homes &amp; creating communities.</p>
+</footer>
+
+</body>
+</html>
